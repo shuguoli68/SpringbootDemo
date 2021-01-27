@@ -15,6 +15,7 @@ class LogAspect {
 
     /**
      * 拦截切点
+     * 定义切入点，切入点为com.example.springbootdemo.controller下的所有携带Ctl函数
      */
     @Pointcut("execution(* com.example.springbootdemo.controller..*Ctl.*(..))")
     fun log(){
