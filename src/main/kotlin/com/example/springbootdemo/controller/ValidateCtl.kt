@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController
 import java.util.*
 import javax.validation.Valid
 
-@Validated
 @RestController
 class ValidateCtl {
 
@@ -32,7 +31,7 @@ class ValidateCtl {
     }
 
     @RequestMapping(value = ["/book/validate"], method = [RequestMethod.POST])
-    fun checkBook(@Valid@RequestBody book: Book) : String{
+    fun checkBook(@RequestBody @Valid book: Book) : String{
         return "参数验证成功！"
     }
 }
