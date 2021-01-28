@@ -1,13 +1,13 @@
 package com.example.springbootdemo.controller
 
 import com.example.springbootdemo.bean.Book
+import com.example.springbootdemo.bean.UserDTO
 import org.springframework.validation.annotation.Validated
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestMethod
 import org.springframework.web.bind.annotation.RestController
 import java.util.*
-import javax.validation.Valid
 
 @RestController
 class ValidateCtl {
@@ -31,7 +31,12 @@ class ValidateCtl {
     }
 
     @RequestMapping(value = ["/book/validate"], method = [RequestMethod.POST])
-    fun checkBook(@RequestBody @Valid book: Book) : String{
+    fun checkBook(@Validated @RequestBody book: Book) : String{
+        return "参数验证成功！"
+    }
+
+    @RequestMapping(value = ["/book/user"], method = [RequestMethod.POST])
+    fun checkUser(@Validated @RequestBody book: UserDTO) : String{
         return "参数验证成功！"
     }
 }

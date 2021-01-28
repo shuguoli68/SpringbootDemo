@@ -25,6 +25,7 @@ dependencies {
 
     //aop切面
     implementation("org.springframework.boot:spring-boot-starter-aop")
+    implementation("javax.validation:validation-api")
 }
 
 tasks.withType<KotlinCompile> {
