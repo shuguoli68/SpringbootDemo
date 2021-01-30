@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletResponse
 
 /**
  * 认证、授权
+ * 参考：https://www.jianshu.com/p/defa75b65a46
  */
 @RestController
 class IndexCtl {
