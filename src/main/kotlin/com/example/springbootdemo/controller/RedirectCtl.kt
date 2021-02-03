@@ -13,6 +13,11 @@ class RedirectCtl {
 
     @RequestMapping("/toLogin")
     fun login(): String? {
-        return "/login_page"
+        return "/login"
+    }
+
+    @RequestMapping("/login_error")
+    fun loginError(): String? {
+        return "/login_error"
     }
 }

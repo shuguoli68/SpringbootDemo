@@ -11,17 +11,17 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 class TestCtl {
 
-    @RequestMapping(value = ["/"])
+    @RequestMapping(value = ["/test"])
     fun testGet() : String{
         return "Hello , this is a get request ."
     }
 
-    @RequestMapping(value = ["/input/{input}"])
+    @RequestMapping(value = ["/test/input/{input}"])
     fun testInput(@PathVariable input:String) : String{
         return "Hello , $input ."
     }
 
-    @RequestMapping(value = ["/p"], method = [RequestMethod.POST])
+    @RequestMapping(value = ["/test/post"], method = [RequestMethod.POST])
     fun testPost() : String{
         return "Hello , this is a post request ."
     }
