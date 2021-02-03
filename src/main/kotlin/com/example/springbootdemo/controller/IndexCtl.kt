@@ -14,9 +14,13 @@ import javax.servlet.http.HttpServletResponse
 @RestController
 class IndexCtl {
 
-    @GetMapping("")
+    @RequestMapping("")
     fun home(): ModelAndView {
         return ModelAndView("redirect:/toIndex")
     }
 
+    @RequestMapping("/login")
+    fun login(): ModelAndView {
+        return ModelAndView("redirect:/toLogin")
+    }
 }
