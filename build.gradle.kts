@@ -30,7 +30,10 @@ dependencies {
     //Security认证、授权
 //    implementation("org.springframework.boot:spring-boot-starter-security")
     //thymeleaf模板
-//    implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
+    implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
+    //swagger
+    implementation("io.springfox:springfox-swagger2:2.9.2")
+    implementation("com.github.xiaoymin:knife4j-spring-boot-starter:1.9.6")
 }
 
 tasks.withType<KotlinCompile> {
