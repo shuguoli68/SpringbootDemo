@@ -28,9 +28,9 @@ dependencies {
     //valid 参数验证
     implementation("javax.validation:validation-api")
     //Security认证、授权
-    implementation("org.springframework.boot:spring-boot-starter-security")
+//    implementation("org.springframework.boot:spring-boot-starter-security")
     //thymeleaf模板
-    implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
+//    implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
 }
 
 tasks.withType<KotlinCompile> {
